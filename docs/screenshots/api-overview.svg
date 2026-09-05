@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise RAG API overview</title>
+  <desc id="desc">A dark API documentation view showing health, readiness, chat, and document upload endpoints.</desc>
+  <rect width="1400" height="820" fill="#f7f8fa"/>
+  <rect width="1400" height="72" fill="#16202a"/>
+  <text x="48" y="45" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">Enterprise RAG API</text>
+  <text x="1170" y="44" fill="#b9c7d3" font-family="Arial, sans-serif" font-size="16">OpenAPI 3.1</text>
+  <rect x="48" y="112" width="1304" height="92" rx="8" fill="#ffffff" stroke="#d9e0e6"/>
+  <text x="76" y="151" fill="#16202a" font-family="Arial, sans-serif" font-size="20" font-weight="700">Enterprise RAG service</text>
+  <text x="76" y="180" fill="#5f6b76" font-family="Arial, sans-serif" font-size="16">Grounded answers, vector retrieval, and source-aware responses.</text>
+  <text x="48" y="254" fill="#16202a" font-family="Arial, sans-serif" font-size="22" font-weight="700">Endpoints</text>
+  <g font-family="Arial, sans-serif" font-size="17">
+    <rect x="48" y="280" width="1304" height="74" rx="6" fill="#ffffff" stroke="#d9e0e6"/>
+    <rect x="72" y="300" width="88" height="34" rx="4" fill="#2f855a"/><text x="92" y="323" fill="#ffffff">GET</text><text x="192" y="323" fill="#16202a">/health</text><text x="1110" y="323" fill="#5f6b76">Service health</text>
+    <rect x="48" y="368" width="1304" height="74" rx="6" fill="#ffffff" stroke="#d9e0e6"/>
+    <rect x="72" y="388" width="88" height="34" rx="4" fill="#2f855a"/><text x="92" y="411" fill="#ffffff">GET</text><text x="192" y="411" fill="#16202a">/ready</text><text x="1110" y="411" fill="#5f6b76">Readiness check</text>
+    <rect x="48" y="456" width="1304" height="74" rx="6" fill="#ffffff" stroke="#d9e0e6"/>
+    <rect x="72" y="476" width="88" height="34" rx="4" fill="#2563a6"/><text x="88" y="499" fill="#ffffff">POST</text><text x="192" y="499" fill="#16202a">/chat</text><text x="1110" y="499" fill="#5f6b76">Grounded RAG answer</text>
+    <rect x="48" y="544" width="1304" height="74" rx="6" fill="#ffffff" stroke="#d9e0e6"/>
+    <rect x="72" y="564" width="88" height="34" rx="4" fill="#2563a6"/><text x="88" y="587" fill="#ffffff">POST</text><text x="192" y="587" fill="#16202a">/documents/upload</text><text x="1110" y="587" fill="#5f6b76">Upload and index</text>
+  </g>
+  <rect x="48" y="666" width="1304" height="92" rx="8" fill="#16202a"/>
+  <text x="76" y="704" fill="#9fe3bc" font-family="Consolas, monospace" font-size="16">GET /health</text>
+  <text x="76" y="733" fill="#ffffff" font-family="Consolas, monospace" font-size="16">{ "status": "healthy", "service": "enterprise-rag-api" }</text>
+</svg>

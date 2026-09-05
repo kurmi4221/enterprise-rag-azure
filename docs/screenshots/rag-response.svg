@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise RAG grounded response</title>
+  <desc id="desc">A representative chat response showing an answer and source metadata.</desc>
+  <rect width="1400" height="820" fill="#102a2e"/>
+  <circle cx="1260" cy="100" r="260" fill="#1c4e52" opacity=".55"/>
+  <text x="70" y="90" fill="#d8f3dc" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">ENTERPRISE RAG</text>
+  <text x="70" y="160" fill="#ffffff" font-family="Arial, sans-serif" font-size="42" font-weight="700">Grounded answer</text>
+  <text x="70" y="204" fill="#a8c7c3" font-family="Arial, sans-serif" font-size="20">Every answer keeps its retrieval trail close at hand.</text>
+  <rect x="70" y="260" width="1260" height="150" rx="10" fill="#f8fbfa"/>
+  <text x="104" y="304" fill="#58706d" font-family="Arial, sans-serif" font-size="16">QUESTION</text>
+  <text x="104" y="344" fill="#183b3d" font-family="Arial, sans-serif" font-size="24" font-weight="700">What is the annual leave policy?</text>
+  <rect x="70" y="438" width="1260" height="180" rx="10" fill="#d8f3dc"/>
+  <text x="104" y="482" fill="#38705a" font-family="Arial, sans-serif" font-size="16">ANSWER</text>
+  <text x="104" y="524" fill="#183b3d" font-family="Arial, sans-serif" font-size="24">Employees are entitled to 20 working days of annual leave.</text>
+  <text x="104" y="568" fill="#38705a" font-family="Arial, sans-serif" font-size="18">[Source 1] employee-handbook.pdf, page 4, chunk 2</text>
+  <rect x="70" y="650" width="1260" height="86" rx="10" fill="#183b3d"/>
+  <text x="104" y="686" fill="#9fe3bc" font-family="Consolas, monospace" font-size="16">retrieval_context</text>
+  <text x="104" y="714" fill="#ffffff" font-family="Consolas, monospace" font-size="16">source_id=1  score=0.91  document_name=employee-handbook.pdf</text>
+</svg>

@@ -1,0 +1,55 @@
+# Project structure
+
+This file lists the repository layout from `e:\resume_project\enterprise-rag`.
+
+```
+.git/
+.venv/
+backend/
+  Dockerfile
+  .env
+  .env.example
+  requirements.txt
+  app/
+    __init__.py
+    main.py
+    api/
+      __init__.py
+    core/
+      __init__.py
+      config.py
+      logging.py
+      middleware.py
+    services/
+      __init__.py
+      azure_ai.py
+      blob_storage_service.py
+      chat_service.py
+      document_ingestion_service.py
+      embedding_service.py
+      rag_service.py
+      search_query_service.py
+      search_service.py
+      search_upload_service.py
+  ingestion/
+    pipeline.py
+    chunking/
+      text_chunker.py
+    loaders/
+      pdf_loader.py
+    documents/
+      employee-handbook.pdf.pdf
+  scripts/
+    __init__.py
+    create_search_index.py
+    test_blob_connection.py
+    test_blob_upload.py
+    test_search_upload.py
+docs/
+frontend/
+infra/
+ingestion/
+tests/
+  test_blob_upload_script.py
+workspace-tree.txt
+```

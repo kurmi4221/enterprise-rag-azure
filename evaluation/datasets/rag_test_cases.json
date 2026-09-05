@@ -1,0 +1,49 @@
+[
+  {
+    "id": "ragas-001",
+    "question": "What is RAGAS?",
+    "expected_answer": "RAGAS is an open-source framework for evaluating Retrieval-Augmented Generation pipelines.",
+    "expected_sources": [
+      {
+        "document_name": "RAGAS_Evaluation_Complete_Guide.pdf",
+        "page_number": 3
+      }
+    ]
+  },
+  {
+    "id": "ragas-002",
+    "question": "What does RAGAS evaluate?",
+    "expected_answer": "RAGAS evaluates the quality of retrieval and generation in RAG pipelines.",
+    "expected_sources": [
+      {
+        "document_name": "RAGAS_Evaluation_Complete_Guide.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ragas-003",
+    "question": "What is the annual leave policy?",
+    "expected_answer": "Employees are entitled to 20 working days of annual leave.",
+    "expected_sources": [
+      {
+        "document_name": "Company HR Policy.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ragas-004",
+    "question": "What are the official office timings?",
+    "expected_answer": "Official office hours are from 9 AM to 6 PM.",
+    "expected_sources": [
+      {
+        "document_name": "Company HR Policy.pdf"
+      }
+    ]
+  },
+  {
+    "id": "ragas-005",
+    "question": "What is the company's stock price?",
+    "expected_answer": null,
+    "expected_sources": []
+  }
+]
