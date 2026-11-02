@@ -344,38 +344,13 @@ The angle-bracket values are runtime values from Azure AI Search and are intenti
 - Keep DeepEval model integration in a dedicated adapter so evaluation can reuse the Azure deployment.
 
 ## Limitations
-
-- Document upload and end-to-end indexing are incomplete; the upload endpoint currently returns HTTP 501.
-- The ingestion pipeline entrypoint is a placeholder; the standalone PDF loader is not connected to the live upload route.
-- TXT and DOCX parsing are not implemented.
 - Retrieval is vector-only, with no hybrid search, reranking, or query-time metadata filtering.
 - Relevance thresholds are constants/default parameters rather than environment-configured settings.
 - Health/readiness checks are static and do not validate Azure dependencies.
-- Citation correctness is not programmatically verified.
-- Evaluation context is limited to source snippets because source objects omit full content.
-- PostgreSQL configuration and related dependencies exist, but no database connection, schema, migration, or persistence flow exists.
 - No authentication, authorization, tenant isolation, rate limiting, or production deployment configuration is implemented.
 - `deepeval` is currently declared with a minimum version rather than an exact pin, so evaluation environments may resolve different compatible releases.
 
-## Future Improvements
 
-- Implement and connect a complete ingestion workflow for PDF, TXT, and DOCX files.
-- Resolve the API import and Docker module-path issues, then add an end-to-end deployment check.
-- Persist complete chunk text and citation evidence in a consistent response contract.
-- Add hybrid retrieval, metadata/OData filters, reranking, and evaluation of threshold choices.
-- Make retrieval settings configurable and add structured telemetry instead of print-only diagnostics.
-- Add API authentication, authorization, tenant-aware filtering, rate limits, and secret-managed credentials.
-- Add PostgreSQL only if conversation, job, or evaluation-result persistence is required.
-- Pin DeepEval and add evaluation setup to the reproducible dependency workflow.
-- Expand automated tests around chunking, empty/unsupported questions, retrieval rejection, citations, and upload failures.
-
-## Security Notes
-
-- Never commit `backend/.env`, account keys, API keys, passwords, bearer tokens, or connection strings.
-- Use Azure CLI/managed identity and role-based access where possible; the current Blob upload route still requires a storage account key and the search client uses an API key.
-- The local `backend/.env` contains credential material and is ignored by Git; treat it as sensitive and rotate any credentials that may have been exposed outside this workspace.
-- Do not expose raw retrieval context or diagnostic output to untrusted users without reviewing data leakage and tenant boundaries.
-- Add authentication, authorization, input/file-size limits, malware scanning, and content-type validation before production use.
 
 ## Portfolio Summary
 
